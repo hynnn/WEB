@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-in</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/signup.css" />
+        <script type="text/javascript" src="/javascripts/signup.js"></script>
+        <script language="JavaScript" src="javascripts/jquery.js"></script>
+    </head>
+    <body>
+        <h1>Sign up</h1>
+        <form method='post' name="signup" id="signup" action="sign_up_list"><!-- form action -->
+            <p id="name" class="normal">UserName：<br /><input id="name" class='text' name='username'></input></p>
+            <p id="password" class="normal">Password：<br /><input class='text' name='password' /></p>
+            <p id="r_password" class="normal">Check Password：<br /><input class='text' name='r_password' /></p>
+            <p id="id" class="normal">StudentId：<br /><input class='text' name='id' /></p>
+            <p id="tel" class="normal">Telephone：<br /><input class='text' name='telephone' /></p>
+            <p id="eml" class="normal">Email：<br /><input class='text' name='email' /></p>
+            <input id='submit' value='submit' type="submit" disabled="true" />
+        </form>
+        <button id='reset' >reset</button>
+        <button id='back' onclick="window.location='/'">back</button>
+    </body>
+</html>

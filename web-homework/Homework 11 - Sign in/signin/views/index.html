@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-in</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/index.css" />
+        <script type="text/javascript" src="/javascripts/index.js"></script>
+        <script language="JavaScript" src="/javascripts/jquery.js"></script>
+    </head>
+    <body>
+        <h1>Sign in</h1>
+         <form action='signin' method='post'>
+            <p id="name" class="normal">UserName：<br /><input class='text' name='username' /></p>
+            <p id="password" class="normal">password：<br /><input class='text' name='password' /></p>
+            <input id='submit' type='submit' value='submit' />
+        </form>
+        <button id='sign-up' onclick="window.location='/signup'">sign up</button>
+    </body>
+</html>

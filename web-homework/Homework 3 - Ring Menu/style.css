@@ -1,0 +1,189 @@
+html, body{
+    overflow: hidden; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    width:100%;
+    height:100%; 
+}
+li{
+    list-style: none;
+}
+
+#at-plus-container{
+    position:relative;
+	width:300px;
+    height:100%;
+	margin:0 auto;
+}
+#bottom-positioner{   
+	position:absolute;
+	width:100%;
+	height:300px;
+	bottom:50px;
+	margin:0 auto;
+}
+#button{
+	width:30px;
+	height:30px;
+	margin:135px auto;
+}
+
+/*@图标变化*/
+.apb{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 135px;
+    left: 135px;
+    border-radius: 50%;
+    background-image:url("assets/images/atplus_white.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size:80%;
+    background-color: #9FA3CD;
+    transition:all 0.3s;
+}
+#button:hover .apb{
+    width: 50px;
+	height: 50px;
+	bottom: 125px;
+	left: 125px;
+	background-image:url("assets/images/atplus_green.png");
+	background-color: rgba(48, 63, 159, 1);
+}
+
+/*上面大圈*/
+#info-bar{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: 130px;
+    left: 130px;
+    border-radius: 50%;
+    background-color: #7E7E7E;
+    opacity:0;
+	pointer-events: none;
+	transition:all 0.3s;
+}
+#button:hover #info-bar{
+    width:160px;
+	height:160px;
+	bottom:185px;
+	left:70px;
+    opacity:1;
+}
+.info ul{
+	padding:0;
+	margin:0;
+}
+.info li{
+    margin-top:10px;
+	margin-bottom:0px;
+	text-align:center;
+}
+.info img{ 
+    opacity:0;
+    transition:all 4ms;
+}
+#button:hover .info img{
+    vertical-align: middle;
+    opacity: 1;
+    width: 28px;
+    height: 28px;
+}
+.info span{
+    padding-left:8px;
+    font-size: bold;
+   /* color:white; ？？？绿色不会显示*/
+}
+li[class$="user"]{
+    font-size: 15pt; 
+    color:white;
+}
+li[class$="comment"]{
+    font-size: 32pt;
+    color:white; 
+}
+li[class~="mine"]{
+    display:inline-block; /*放在一行*/
+    font-size: 15pt; 
+    color:#079E6E;
+}
+
+.posted{
+	padding-left:33px;
+}
+.like{
+	padding-left:10px;
+}
+
+/*左边圈圈*/
+#control-ring-container{
+    pointer-events: none;/*要加*/
+    position:absolute;
+    width: 300px;
+    height: 300px;
+	bottom: 0px;
+	left: 0px;
+	border-radius: 50%;
+}
+li[class$="button"]{
+	display: block;
+    position:absolute;
+	width:0px;
+	height:0px;
+	margin:120px 100px;
+	border-radius: 50%;
+	background-color: grey;
+	background-size:60%;
+	background-position: center center;
+    background-repeat: no-repeat;
+    opacity:0;
+    transition:all 0.3s;
+}
+#button:hover .button{
+    width:40px;
+	height:40px;
+	opacity:1;
+}
+/*一点点调整五个圈的位置？*/
+#button:hover .mask{
+    margin: 80px 20px;
+    background-image:url("assets/images/history.png");
+}
+#button:hover .history{
+    margin:125px 0px;
+    background-image:url("assets/images/history.png");
+}
+#button:hover  .message{
+    margin:170px 20px;
+    background-image:url("assets/images/message.png");
+}
+#button:hover .setting{
+    margin:190px 70px;
+    background-image:url("assets/images/setting.png");
+}
+#button:hover .sign{
+    margin:180px 120px;
+    background-image:url("assets/images/signin.png");
+}
+
+/*红色圈圈*/
+.unread{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    font-size: 11pt;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: red;
+    opacity:0;
+	transition:all 0.3s;
+}
+#button:hover .unread{ 
+    width: 20px;
+    height: 20px;
+    opacity:1;
+    margin:-5px 25px; 
+}

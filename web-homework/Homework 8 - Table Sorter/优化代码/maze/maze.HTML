@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+    <head>
+        <title>Maze</title>
+        <meta charset="utf-8">
+        <link  href="maze_css.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="maze_JS.js"> </script>
+        <script src="jquery.js"></script>
+        <script src="lodash.js"></script>
+    </head>
+    <body>
+        <h1>THe Amazing Mouse Maze!</h1>
+        <h2>Move your mouse over the "S" to begin.</h2>
+
+        <div id="screen"></div>
+
+        <div id="maze">
+            <div id="topleftWall" class="wall"></div>
+            <div id="topmiddleWall" class="wall"></div>
+            <div id="toprightWall" class="wall"></div>
+            <div id="lefttopWall" class="wall"></div>
+            <div class = "way" id = "topWay"></div>
+            <div id="righttopWall" class="wall"></div>
+            <div id="leftWall" class="wall"></div>
+            <div class = "way" id = "leftWay"></div>
+            <div id="middletopWall" class="wall"></div>
+            <div class = "way" id = "rightWay"></div>
+            <div id="rightWall" class="wall"></div>
+
+            <div class = "button">
+                <div id="startButton" >
+                    <p>S</p>
+                </div>
+            </div>
+            <div class = "way" id = "bottomleftWay"></div>
+            <div id="middlebottomWall" class="wall"></div>
+            <div class = "way" id = "bottomrightWay"></div>
+            <dic class = "button">
+                <div id="endButton" >
+                    <p>E</p>
+                </div>
+            </dic>
+
+            <div id="downleftWall" class="wall"></div>
+            <div id="downmiddleWall" class="wall"></div>
+            <div id="downrightWall" class="wall"></div>
+        </div>
+
+        <div id="bottom">
+            <div id="text">
+                <p>
+                    The object of this game is to guide the mouse cursor through the start area</br>
+                    and get to the end area. Be sure to avoid the walls:<br/>
+                </p>
+            </div>
+            <div id = "wallExample"></div>
+            <div id = "text">
+                <p>Good luck!</p>
+            </div>
+        </div>
+    </body>
+</html>

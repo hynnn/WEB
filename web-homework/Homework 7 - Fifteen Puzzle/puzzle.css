@@ -1,0 +1,202 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+/*time and step*/
+#con{
+    font-family: "Century Gothic", sans-serif;
+    width: 150px;
+    height: 75px;
+    margin: 0px auto;
+    position: relative;
+}
+#time_con,#step_con{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+}
+#time_right,#step_right{
+    position: relative;
+    left: -5px;
+}
+#time,#step{
+    color: red;
+    text-align: center;
+    border-radius: 15px;
+    width: 100px;
+    position: relative;
+    left: calc(50%);
+    top: -39px;
+}
+
+#main{
+    width: 360px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*show result*/
+#gameInfo{
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: blue;
+    font-size: 25px;
+    font-family: Courier, sans-serif;
+}
+
+/*restart*/
+#restart_con{
+    margin: 0px auto;
+    width: 150px;
+    height: 60px;
+    position: relative;
+    top: 20px;
+}
+#restart {
+    margin: 0 auto;
+    width: 120px;
+    height: 40px;
+    background-color: #8583ff;
+    box-shadow: 3px 4px 15px gray;
+    font-size: 18px;
+    text-align: center;
+    left: calc(50%);
+}
+
+/*picture*/
+#picture{
+    border-radius:10px ;
+    position: relative;
+    top: 0px;
+    margin-top: 0px;
+    width: 360px ;
+    height: 360px ;
+    bottom: -50px;
+}
+.picture_0 {
+	background: url("images/panda.jpg") no-repeat;
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px #969696;
+    transition: 0.2s;
+}
+
+.picture_0:hover {
+	box-shadow: 3px 0px 15px black;
+    transition: 0.2s;
+}
+
+#position_0, #position_1, #position_2, #position_3 {
+    top: 0;
+}
+
+#position_4, #position_5, #position_6, #position_7 {
+    top: 25%;
+}
+
+#position_8, #position_9, #position_10, #position_11 {
+    top: 50%;
+}
+
+#position_12, #position_13, #position_14, #position_15 {
+    top: 75%;
+}
+
+#position_0, #position_4, #position_8, #position_12 {
+    left: 0;
+}
+
+#position_1, #position_5, #position_9, #position_13 {
+    left: 25%;
+}
+
+#position_2, #position_6, #position_10, #position_14 {
+    left: 50%;
+}
+
+#position_3, #position_7, #position_11, #position_15 {
+    left: 75%;
+}
+
+.part_0 {
+    background-position: 0 0;
+}
+
+.part_1 {
+    background-position: -90px 0;
+}
+
+.part_2 {
+    background-position: -180px 0;
+}
+
+.part_3 {
+    background-position: -270px 0;
+}
+
+.part_4 {
+    background-position: 0 -90px;
+}
+
+.part_5 {
+    background-position: -90px -90px;
+}
+
+.part_6 {
+    background-position: -180px -90px;
+}
+
+.part_7 {
+    background-position: -270px -90px;  
+}
+
+.part_8 {
+    background-position: 0 -180px;
+}
+
+.part_9 {
+    background-position: -90px -180px;
+}
+
+.part_10 {
+    background-position: -180px -180px; 
+}
+
+.part_11 {
+    background-position: -270px -180px;
+}
+
+.part_12 {
+    background-position: 0 -270px;
+}
+
+.part_13 {
+    background-position: -90px -270px;
+}
+
+.part_14 {
+    background-position: -180px -270px; 
+}
+
+.part_15 {
+    background-image: none;
+    background-color: gray;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Calculator </title>
+        <meta charset="utf-8">
+        <link  href="cal.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="JS.js"> </script>
+    </head>
+    <body>
+        <div id="title">
+            <h1>Simple Calculator</h1>
+        </div>
+
+        <div id = "calculator">
+            <div id="show">
+                <input type="text" class="out"  value="" id="result" disabled="disabled">
+            </div>
+
+            <div id = "first_row">
+                <button onclick="command(7);" >7</button>
+                <button onclick="command(8);" >8</button>
+                <button onclick="command(9);" >9</button> 
+                <button class="c_tool" onclick="command('/');" >/</button> 
+            </div>
+
+            <div id = "second_row">
+                <button onclick="command(4);" >4</button>
+                <button onclick="command(5);" >5</button>
+                <button onclick="command(6);" >6</button>
+                <button class="c_tool" onclick="command('*');" >*</button>
+            </div>
+
+            <div id = "third_row">
+                <button onclick="command(1);" >1</button>
+                <button onclick="command(2);" >2</button>
+                <button onclick="command(3);" >3</button>
+                <button class="c_tool" onclick="command('-');" >-</button>
+            </div>
+
+            <div id = "fourth_row">
+                <button onclick="command(0);">0</button>
+                <button class="c_tool" onclick="command('.');" >.</button>
+                <button class="c_tool" onclick="del();">←</button>
+                <button class="c_tool" onclick="command('+');" >+</button>
+            </div>
+
+            <div id = "fifth_row">
+                <button class="c_tool" onclick="command('(');" >(</button>
+                <button class="c_tool" onclick="command(')');" >)</button>
+                <button id = "delete_all"onclick="clearall();" >CE</button>
+                <button id = "equal" onclick="equal();" >=</button>
+            </div>
+        </div>
+    </body>
+</html>

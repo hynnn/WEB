@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fifteen Puzzle</title>
+        <link rel="stylesheet" type="text/css" href="puzzle.css">
+        <script src="puzzle.js"></script>
+        <script src="jquery.js"></script>
+        <script src="lodash.js"></script>
+    </head>
+    <body>
+        <h1>拼图游戏</h1>
+        <div id="con">
+            <div id="time_con">
+                <div class = "time_right">Time:</div>
+                <input id="time" type = "text" value = "00:00:00" onfocus="blur()">
+            </div>
+            <div id="step_con">
+                <div class = "step_right">Step:</div>
+                <input type = "text" value = "0" id = "step" onfocus="blur()">
+            </div>
+        </div>
+        <div id="main">
+            <div id="gameInfo"></div>
+            <div id="picture"></div>
+        </div>
+        <div id="restart_con">
+            <input type = "button" id = "restart" value = "重新开始" />
+        </div>
+    </body>
+</html>

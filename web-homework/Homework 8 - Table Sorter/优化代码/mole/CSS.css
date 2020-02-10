@@ -1,0 +1,94 @@
+body{
+    font-family: "Century Gothic", sans-serif;
+    background: url("background2.jpg");
+}
+h1{
+    font-size: 25pt;
+	text-align: center;
+	font-weight: normal;
+}
+h2 {
+	text-align: center;
+	font-size: 15pt;
+	font-weight: normal;
+}
+h3 {
+	font-weight: bold;
+	font-size: 15pt;
+}
+
+#function {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 100px;
+}
+#start, #timeText, #time, #state, #scoreText, #score{
+	position: absolute;
+	font-size: 14pt;
+	border-radius: 5px;
+	text-align: center;
+	background-color: white;
+}
+
+#start {
+	left: 60px;
+	top: 10px;
+	width: 220px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+#timeText {
+	left: 330px;
+	top: -5px;
+}
+
+#time {
+	left: 390px;
+	top: 10px;
+    width: 30px;
+    border: 1px solid gray;
+}
+
+#state {
+	left: 60px;
+	top: 50px;
+    width: 216px;
+    border: 1px solid gray;
+}
+
+#scoreText {
+	left: 320px;
+	top: 35px;
+}
+
+#score {
+	top: 50px;
+	left: 390px;
+    width: 30px;
+    border: 1px solid gray;
+}
+
+#main {
+	width: 550px;
+	height: 330px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	margin: 0 auto;
+}
+
+#info {
+	width: 800px;
+	margin: auto auto;
+    font-size: 13pt;
+    font-weight: normal;
+}
+
+.hole {
+	width: 35px;
+	height: 35px;
+	margin: 10px;
+	cursor: pointer;
+}

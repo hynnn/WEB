@@ -1,0 +1,61 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+h1,h2{
+    font-family: "Times New Roman", "courier";
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*设计表格的边框和颜色*/
+table tr,td,th{
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    border: 0.8px solid #BFBFBF;
+    font-family: Verdana;
+}
+th{
+    background-color: #00006d;
+    color: white;
+    cursor: pointer;
+}
+
+/*边框合并*/
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/*设置间隔颜色*/
+tr:nth-child(even){
+    background-color: #DDDDDD;
+}
+#staff{
+    width: 405px;
+}
+/*分别设置th 没有点击，奇数次点击，偶数次点击的效果*/
+.no_click{
+    background-color: #00006d;
+}
+.click_odd ,.click_even{
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #a3a3eb;
+}
+.click_odd{
+    background-image: url(ascend.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #a3a3eb;
+}
+.click_even{
+    background-image: url(descend.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #a3a3eb;
+}
+
+
+

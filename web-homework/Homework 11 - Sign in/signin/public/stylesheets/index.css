@@ -1,0 +1,55 @@
+/*常规布局，并且设置button样式*/
+body{
+    background-image: url("../images/bg.jpg");
+    /*background-size: 100%;*/
+    background-repeat: no-repeat;
+    font-family: "微软雅黑";
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+h1{
+    font-size: 50px;
+}
+form{
+    margin-top: 60px;
+    font-size: 25px;
+    width: 100%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text,.password{
+    outline-style:none;
+    cursor: pointer;
+    border-radius: 11px 11px 11px 11px;
+    font-weight: 20px;
+    width: 180px;
+    height: 25px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#submit,#sign-up{
+    outline-style:none;
+    cursor: pointer;
+    border-radius: 11px 11px 11px 11px;
+    font-size: 20px;
+    width: 10%;
+    height: 30px;
+}
+#submit{
+    position: absolute;
+    left: 45%;
+    top: 60%;
+}
+#sign-up{
+    position: absolute;
+    left: 45%;
+    top: 70%;
+}
+.wrong{
+    color: red;
+}
+
